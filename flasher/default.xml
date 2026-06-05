@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- TODO: Update to point to proper repo -->
+  <remote alias="repo" fetch="https://github.com/rborn-tx" name="githt"/>
+  <remote alias="repo" fetch="https://github.com/toradex" name="toradex"/>
+
+  <include name="base/pinned.xml"/>
+  <include name="bsp/pinned-nxp.xml"/>
+  <include name="bsp/pinned-ti.xml"/>
+  <include name="bsp/pinned-tdx.xml"/>
+
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="97e482b71688b62ac1109d16e89368122f039cbf"/>
+  <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex" revision="9650a539e38ac0be0dbfa695b184b2846638f857"/>
+  <!-- TODO: Update to point to initial version -->
+  <project name="meta-toradex-flasher" path="layers/meta-toradex-flasher" remote="githt" revision="4be5d56f8fe456b352c6247f63e7129a4be60837" upstream="scarthgap-7.x.y">
+    <linkfile dest="export" src="conf/templates/default/export"/>
+  </project>
+</manifest>

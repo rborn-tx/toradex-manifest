@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- TODO: Update to point to proper repo -->
+  <remote alias="repo" fetch="https://github.com/rborn-tx" name="githt"/>
+  <remote alias="repo" fetch="https://github.com/toradex" name="toradex"/>
+
+  <include name="base/integration.xml"/>
+  <include name="bsp/integration-nxp.xml"/>
+  <include name="bsp/integration-ti.xml"/>
+  <include name="bsp/integration-tdx.xml"/>
+
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="scarthgap"/>
+  <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex" revision="scarthgap-7.x.y"/>
+  <project name="meta-toradex-flasher" path="layers/meta-toradex-flasher" remote="githt" revision="scarthgap-7.x.y">
+    <linkfile dest="export" src="conf/templates/default/export"/>
+  </project>
+</manifest>
