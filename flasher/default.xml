@@ -11,8 +11,7 @@
 
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="97e482b71688b62ac1109d16e89368122f039cbf"/>
   <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex" revision="9650a539e38ac0be0dbfa695b184b2846638f857"/>
-  <!-- TODO: Update to point to initial version -->
-  <project name="meta-toradex-flasher" path="layers/meta-toradex-flasher" remote="githt" revision="20bed852278084fd9bc723805aa61d1b2ce63a16" upstream="scarthgap-7.x.y">
+  <project name="meta-toradex-flasher" path="layers/meta-toradex-flasher" remote="githt" revision="f195fb7f4a9c2c7f337e7d15857fc129db8eae6b" upstream="scarthgap-7.x.y">
     <linkfile dest="export" src="conf/templates/default/export"/>
   </project>
 </manifest>
